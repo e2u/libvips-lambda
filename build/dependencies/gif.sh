@@ -1,6 +1,6 @@
 #!/bin/sh
 
-fetchSource gif https://${SOURCEFORGE_MIRROR}.dl.sourceforge.net/project/giflib/giflib-${VERSION_GIF}.tar.gz
+fetchSource gif http://${SOURCEFORGE_MIRROR}.dl.sourceforge.net/project/giflib/giflib-${VERSION_GIF}.tar.gz
 export JSON_VERSIONS="${JSON_VERSIONS}, \"${DEP_NAME}\": \"${VERSION_GIF}\""
 
 if [ ! -f "configured.sts" ]; then
@@ -11,6 +11,7 @@ if [ ! -f "configured.sts" ]; then
     --disable-static \
     --disable-dependency-tracking >> ${BUILD_LOGS}/${DEP_NAME}.config.log 2>&1
     touch configured.sts
+    cat ${BUILD_LOGS}/${DEP_NAME}.config.log
 else
     printf "\tAlready Configured\n"
 fi
