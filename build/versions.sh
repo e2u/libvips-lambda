@@ -55,4 +55,4 @@ export VERSION_XML2=2.9.12           # https://github.com/GNOME/libxml2/releases
 export VERSION_ZLIB=1.2.11          # https://github.com/madler/zlib/releases
 
 # Least out-of-sync Sourceforge mirror
-export SOURCEFORGE_MIRROR=netix
+export SOURCEFORGE_MIRROR=telkomuniversity
