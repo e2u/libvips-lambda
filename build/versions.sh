@@ -2,11 +2,11 @@
 
 # Default Version Numbers
 if [ -z ${VERSION_VIPS+x} ]; then
-    export VERSION_VIPS=8.5.6       # https://github.com/jcupitt/libvips/releases
+    export VERSION_VIPS=8.11.2       # https://github.com/jcupitt/libvips/releases
 fi
 
 if [ -z ${VERSION_PHP+x} ]; then
-    export VERSION_PHP=7.1.6        # https://github.com/php/php-src/releases
+    export VERSION_PHP=7.2.22        # https://github.com/php/php-src/releases
 fi
 
 if [ -z ${BUILD_PHP+x} ]; then
