@@ -1,6 +1,6 @@
 #!/bin/sh
 
-fetchSource gif http://${SOURCEFORGE_MIRROR}.dl.sourceforge.net/project/giflib/giflib-${VERSION_GIF}.tar.gz
+fetchSource gif https://${SOURCEFORGE_MIRROR}.dl.sourceforge.net/project/giflib/giflib-${VERSION_GIF}.tar.gz
 export JSON_VERSIONS="${JSON_VERSIONS}, \"${DEP_NAME}\": \"${VERSION_GIF}\""
 
 if [ ! -f "configured.sts" ]; then
