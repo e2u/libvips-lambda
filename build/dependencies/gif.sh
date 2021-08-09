@@ -9,8 +9,7 @@ if [ ! -f "configured.sts" ]; then
     --prefix=${TARGET} \
     --enable-shared \
     --disable-static \
-    --disable-dependency-tracking
-    # >> ${BUILD_LOGS}/${DEP_NAME}.config.log 2>&1
+    --disable-dependency-tracking >> ${BUILD_LOGS}/${DEP_NAME}.config.log 2>&1
     touch configured.sts
 else
     printf "\tAlready Configured\n"
