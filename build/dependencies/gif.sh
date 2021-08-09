@@ -6,10 +6,10 @@ export JSON_VERSIONS="${JSON_VERSIONS}, \"${DEP_NAME}\": \"${VERSION_GIF}\""
 if [ ! -f "configured.sts" ]; then
     printf "\tConfiguring\n"
     ./configure  \
-    --prefix=${TARGET} \
-    --enable-shared \
-    --disable-static \
-    --disable-dependency-tracking >> ${BUILD_LOGS}/${DEP_NAME}.config.log 2>&1
+        --prefix=${TARGET} \
+        --enable-shared \
+        --disable-static \
+        --disable-dependency-tracking >> ${BUILD_LOGS}/${DEP_NAME}.config.log 2>&1
     touch configured.sts
 else
     printf "\tAlready Configured\n"
